@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travel</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="left-section">
+                <!-- Logo -->
+                <a href="travel_recommendation.html" class="logo-container">
+                    <img src="./images/logo.png" alt="Travel Logo">
+                    <span class="logo-text">Travel</span>
+                </a>
+
+                <!-- Nav Links -->
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="travel_recommendation.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Thanh tìm kiếm -->
+            <div class="search-container">
+                <input id="searchInput" type="text" placeholder="Enter 'beach', 'temple' or a country name">
+                <i class="fas fa-search search-icon"></i>
+                <button class="btn-search">Search</button>
+                <button class="btn-clear">Clear</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PHẦN HIỂN THỊ KẾT QUẢ TÌM KIẾM -->
+    <section class="results-section">
+        <div id="results-container"></div>
+    </section>
+
+    <main>
+        <!-- PHẦN HERO -->
+        <section class="hero-section">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="hero-content">
+                <h1>EXPLORE<br>DREAM<br>DESTINATION</h1>
+                <p>
+                    It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.
+                </p>
+                <a href="#" class="btn-book-now">BOOK NOW</a>
+            </div>
+        </section>
+    </main>
+    
     <script src="travel_recommendation.js"></script>
 </body>
 </html>
+
